@@ -1,0 +1,90 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.App {
+  width: 76%;
+  display: grid;
+  grid-template-columns: 16% auto;
+  margin: 5vh auto;
+}
+
+.sizes {
+  margin: 5px;
+}
+
+.size-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.size {
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  margin-right: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+} 
+
+.size:hover {
+  border: 1px solid black;
+}
+
+.size:focus {
+  outline: none;
+}
+
+.products {
+  margin: 5px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  border: 1px solid #e3e3e3;
+  padding: 14px 10px;
+}
+
+.card-title {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.price {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.card-image {
+  width: 248px;
+  height: auto;
+}
+
+.add-to-cart {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  background: #1b1920;
+  border: 0;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.add-to-cart:hover {
+  background: #55178f;
+}
