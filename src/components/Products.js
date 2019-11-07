@@ -2,9 +2,14 @@ import React, {useState} from 'react';
 
 import CardList from './CardList';
 
-const Products = ({products}) =>  {
+const Products = ({products, sortProducts}) =>  {
 
     const [value, setValue] = useState('Select');
+
+    const setList = (e) => {
+        setValue(e.target.value);
+        sortProducts(e.target.value);
+    }
     
     return (
         <div className="products">
@@ -13,7 +18,7 @@ const Products = ({products}) =>  {
                 <h3>Products</h3>
                 <div className="sort-list">
                     Sort by&nbsp;: &nbsp;
-                    <select value={value} onChange={e => setValue(e.target.value)}>
+                    <select value={value} onChange={setList}>
                         <option value="Select">Select</option>
                         <option value="Highest to Lowest">Highest to Lowest</option>
                         <option value="Lowest to Highest">Lowest to Highest</option>

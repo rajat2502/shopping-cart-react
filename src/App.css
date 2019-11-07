@@ -26,11 +26,18 @@ body {
   height: 38px;
   padding: 0;
   border: 0;
+  font-size: 11px;
   border-radius: 50%;
   margin-right: 14px;
   margin-bottom: 12px;
   cursor: pointer;
+  font-weight: bold;
 } 
+
+.selected-size {
+  background: #1b1920;
+  color: white;
+}
 
 .size:hover {
   border: 1px solid black;
@@ -60,7 +67,7 @@ body {
   font-size: 1rem;
   padding: 4px 6px;
   background: inherit;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #cccccc;
   border-radius: 4px;
 }
 
@@ -78,19 +85,22 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 10px auto;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
   padding: 14px 10px;
 }
 
 .card-title {
-  margin-top: 8px;
-  margin-bottom: 1px;
+  margin-top: 9px;
+  margin-bottom: 3px;
   color: #196ead;;
+  cursor: pointer;
+
 }
 
 .price {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .card-image {

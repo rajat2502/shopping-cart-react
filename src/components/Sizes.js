@@ -1,17 +1,26 @@
 import React from 'react'
 
-const Sizes = () =>  {
+const Sizes = ({selectedSizes, setSize}) =>  {
+
+    const sizes = ['XS', 'S', 'M', 'ML', 'L', 'XL', 'XXL'];
+
     return (
         <div className="sizes">
             <h3>Sizes</h3>
             <div className="size-list">
-                <button className="size">XS</button>
-                <button className="size">S</button>
-                <button className="size">M</button>
-                <button className="size">ML</button>
-                <button className="size">L</button>
-                <button className="size">XL</button>
-                <button className="size">XXL</button>
+                {
+                    sizes.map((size, index) => {
+                        return (
+                            <button 
+                                className={ "size" + (selectedSizes.includes(size) ? " selected-size" : "")}
+                                key={index}
+                                onClick={() => setSize(size)}
+                            >
+                                {size}
+                            </button>
+                        )
+                    })
+                }
             </div>
         </div>
     )
