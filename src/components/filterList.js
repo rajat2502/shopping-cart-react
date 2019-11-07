@@ -7,9 +7,13 @@ export default function filterList(arr, method) {
     else {
           return products.filter(product => {
           const sizeArray = product.size.split(" ");
-          console.log(sizeArray);
-          if(sizeArray.some(r=> arr.indexOf(r) >= 0)) {
-          return product;
+          if(arr.length > 0) {
+                if(sizeArray.some(r => arr.indexOf(r) >= 0)) {
+                    return product;
+            }
+          }
+          else {
+              return products;
           }
       })  
     }

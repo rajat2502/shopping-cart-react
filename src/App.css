@@ -75,6 +75,11 @@ body {
   outline-color: #196ead;
 }
 
+.products-length {
+  font-size: 0.9rem;
+  color: hsl(0, 2%, 47%)
+}
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -163,5 +168,10 @@ body {
 
   .products-nav h3 {
     margin: 10px auto;
+  }
+
+  .products-length {
+    display: flex;
+    justify-content: center;
   }
 }
