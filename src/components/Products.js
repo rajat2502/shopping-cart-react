@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import CardList from './CardList';
 
-const Products = () =>  {
+const Products = ({products}) =>  {
 
     const [value, setValue] = useState('Select');
     
@@ -10,8 +10,9 @@ const Products = () =>  {
         <div className="products">
 
             <div className="products-nav">
-                <h3>Products:</h3>
+                <h3>Products</h3>
                 <div className="sort-list">
+                    Sort by&nbsp;: &nbsp;
                     <select value={value} onChange={e => setValue(e.target.value)}>
                         <option value="Select">Select</option>
                         <option value="Highest to Lowest">Highest to Lowest</option>
@@ -20,7 +21,7 @@ const Products = () =>  {
                 </div>
             </div>
 
-            <CardList />
+            <CardList products={products} />
             
         </div>
     )

@@ -47,6 +47,7 @@ body {
 .products-nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
@@ -57,7 +58,7 @@ body {
 
 .sort-list select {
   font-size: 1rem;
-  padding: 2px 4px;
+  padding: 4px 6px;
   background: inherit;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
@@ -122,4 +123,35 @@ body {
   position: fixed;
   top: 0;
   right: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .App {
+    grid-template-columns: 100%;
+  }
+
+  .sizes {
+    margin: 0;
+    text-align: center;
+  }
+
+  .sizes h3 {
+    margin: 10px auto;
+  }
+
+  .size-list {
+    justify-content: center;
+  }
+
+  .size {
+    margin-right: 6.5px;
+  }
+
+  .sort-list {
+    margin: auto;
+  }
+
+  .products-nav h3 {
+    margin: 10px auto;
+  }
 }

@@ -1,9 +1,8 @@
 import React from 'react';
 
 import Card from './Card';
-import products from '../products.json';
 
-const CardList = () => {
+const CardList = ({products}) => {
     console.log(products);
     return (
         <div className="card-list">

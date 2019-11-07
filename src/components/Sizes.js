@@ -3,7 +3,7 @@ import React from 'react'
 const Sizes = () =>  {
     return (
         <div className="sizes">
-            <h3>Sizes:</h3>
+            <h3>Sizes</h3>
             <div className="size-list">
                 <button className="size">XS</button>
                 <button className="size">S</button>
