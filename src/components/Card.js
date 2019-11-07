@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Card = () => {
+const Card = ({data}) => {
     return (
         <div className="card">
-            <img src="https://purepng.com/public/uploads/large/purepng.com-black-t-shirtclothingblack-t-shirtfashion-dress-shirt-black-cloth-tshirt-631522326884bzr0p.png" className="card-image" />
-            <h3 className="card-title">Title</h3>
-            <p className="price">price</p>
+            <img src={data.url} className="card-image" />
+            <h3 className="card-title">{data.title}</h3>
+            <p className="price">price: <span>$ {data.price}</span></p>
             <button className="add-to-cart">Add to cart</button>
         </div>
     )

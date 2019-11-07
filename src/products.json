@@ -1,0 +1,114 @@
+[
+    {
+        "id": "1",
+        "title": "HERE&NOW",
+        "url": "https://i.ibb.co/55cwBpP/2.png",
+        "size": "XS S",
+        "price": "10.90"
+    },
+    {
+        "id": "2",
+        "title": "Calvin Klein Jeans",
+        "url": "https://i.ibb.co/NNd5wmc/1.png",
+        "size": "XS S",
+        "price": "10.00"
+    },
+    {
+        "id": "3",
+        "title": "Moda Rapido",
+        "url": "https://i.ibb.co/wQzRVJM/3.png",
+        "size": "XS S",
+        "price": "9.80"
+    },
+    {
+        "id": "4",
+        "title": "Roadster",
+        "url": "https://i.ibb.co/Fh2Bv0D/4.png",
+        "size": "XS S",
+        "price": "10.99"
+    },
+    {
+        "id": "5",
+        "title": "Difference of Opinion",
+        "url": "https://i.ibb.co/Vq5KDbx/5.png",
+        "size": "S M",
+        "price": "11.90"
+    },
+    {
+        "id": "6",
+        "title": "Dillenger",
+        "url": "https://i.ibb.co/X867M8m/6.png",
+        "size": "S M",
+        "price": "8.50"
+    },
+    {
+        "id": "7",
+        "title": "Roadster",
+        "url": "https://i.ibb.co/YcdG2pK/7.png",
+        "size": "S M",
+        "price": "12.99"
+    },
+    {
+        "id": "8",
+        "title": "FIFO DIDO",
+        "url": "https://i.ibb.co/FbC6z7C/8.png",
+        "size": "S M",
+        "price": "10.00"
+    },
+    {
+        "id": "9",
+        "title": "Roadster",
+        "url": "https://i.ibb.co/xg6vqVd/9.png",
+        "size": "M ML",
+        "price": "14.80"
+    },
+    {
+        "id": "10",
+        "title": "HERE&NOW",
+        "url": "https://i.ibb.co/wzzghxL/10.png",
+        "size": "M ML",
+        "price": "7.99"
+    },
+    {
+        "id": "11",
+        "title": "jack & jones",
+        "url": "https://i.ibb.co/jZ11DSd/11.png",
+        "size": "ML L",
+        "price": "9.99"
+    },
+    {
+        "id": "12",
+        "title": "Roadster",
+        "url": "https://i.ibb.co/SK6pX6B/12.png",
+        "size": "ML L",
+        "price": "15.90"
+    },
+    {
+        "id": "13",
+        "title": "Roadster",
+        "url": "https://i.ibb.co/gDKrGxY/13.png",
+        "size": "L XL",
+        "price": "16.00"
+    },
+    {
+        "id": "14",
+        "title": "Calvin Klein Jeans",
+        "url": "https://i.ibb.co/w6QGNv9/14.png",
+        "size": "XL XXL",
+        "price": "14.60"
+    },
+    {
+        "id": "15",
+        "title": "Maniac",
+        "url": "https://i.ibb.co/5BtcNN8/15.png",
+        "size": "XL XXL",
+        "price": "10.50"
+    },
+    {
+        "id": "16",
+        "title": "HERE&NOW",
+        "url": "https://i.ibb.co/xDcvk2V/16.png",
+        "size": "XL XXL",
+        "price": "12.00"
+    }
+]

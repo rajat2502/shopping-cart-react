@@ -1,12 +1,18 @@
 import React from 'react';
 
 import Card from './Card';
+import products from '../products.json';
 
 const CardList = () => {
+    console.log(products);
     return (
         <div className="card-list">
             {
-                [1, 23, 2, 35, 5 ,5, 5 ,5, 1, 1, 1, 1, 1 ,1 ,1, ].map(() => <Card />)
+                products.map(item => {
+                    return (
+                        <Card key={item.id} data={item} />
+                    )
+                })
             }
         </div>
     )

@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 18px;
+  position: relative;
 }
 
 .App {
@@ -43,6 +44,29 @@ body {
   margin: 5px;
 }
 
+.products-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.products-nav h3 {
+  margin: 0;
+}
+
+.sort-list select {
+  font-size: 1rem;
+  padding: 2px 4px;
+  background: inherit;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+}
+
+.sort-list select:focus {
+  outline-color: #196ead;
+}
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -58,12 +82,13 @@ body {
 }
 
 .card-title {
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 8px;
+  margin-bottom: 1px;
+  color: #196ead;;
 }
 
 .price {
-  margin-top: 4px;
+  margin-top: 0;
   margin-bottom: 4px;
 }
 
@@ -82,9 +107,19 @@ body {
   background: #1b1920;
   border: 0;
   border-radius: 4px;
-  transition: all 0.4s;
+  transition: background 0.4s;
 }
 
 .add-to-cart:hover {
-  background: #55178f;
+  background: #196ead;
+}
+
+.add-to-cart:focus {
+  outline: none;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
