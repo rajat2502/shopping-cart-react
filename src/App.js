@@ -48,12 +48,28 @@ const App = () => {
 
   const addToCart = (item) => {
     const productList = [...cart];
-    if(productList.includes(item)) {
-
-    }
-    else {
+    if(!productList.includes(item)) {
       productList.push(item);
     }
+    const index = productList.indexOf(item);
+    productList[index].quantity++;
+    setCart(productList);
+  }
+
+  const changeQuantity = (item, e) => {
+    const productList = [...cart];
+    const index = productList.indexOf(item);
+    if(e === '+') {
+      productList[index].quantity++;
+    }
+    else {
+      if(productList[index].quantity > 1) {
+        productList[index].quantity--;
+      }
+      else {
+        productList.splice(index, 1);
+      }
+    } 
     setCart(productList);
   }
   
@@ -61,7 +77,7 @@ const App = () => {
     <div className="App">
       <Sizes selectedSizes={selectedSizes} setSize={setSize} />
       <Products products={products} sortProducts={sortProducts} addToCart={addToCart} />
-      <Cart />
+      <Cart products={cart} changeQuantity={changeQuantity} />
     </div>
   );
 }

@@ -211,11 +211,23 @@ body {
 .cart-list {
   background: #1b1920;
   overflow-y: scroll;
-  min-height: 440px;
+  height: 68vh;
 }
 
-.cart-list::-webkit-scrollbar {
-  display: none;
+.cart-list::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+.cart-list::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #e3e3e3;
+}
+
+.cart-list::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
 }
 
 .checkout-div {
@@ -260,6 +272,14 @@ body {
 
 .checkout-btn:hover {
   background: midnightblue;
+}
+
+.empty-cart p{
+  color: white;
+  padding: 10px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.07ch;
 }
 
 .cart-item {
@@ -389,5 +409,9 @@ body {
     transform: rotate(135deg);
     position: relative;
     top: -10px;
+  }
+
+  .cart-list {
+    height: 54vh;
   }
 }

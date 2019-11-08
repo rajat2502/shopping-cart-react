@@ -1,19 +1,19 @@
 import React from 'react'
 
-const CartItem = () => {
+const CartItem = ({product, changeQuantity}) => {
     return (
         <div className="cart-item">
-            <img src="https://i.ibb.co/Fh2Bv0D/4.png" alt="cart-item" className="cart-item-image" />
+            <img src={product.url} alt="cart-item" className="cart-item-image" />
             <div>
                 <div>
-                    <p className="item-title">Roadster</p>
-                    <span className="cart-item-price">$ 20</span>
+                    <p className="item-title">{product.title}</p>
+                    <span className="cart-item-price">$ {product.price}</span>
                 </div>
                 <div>
-                    <p className="item-quantity">Quantity: <span>1</span></p>
+                    <p className="item-quantity">Quantity: <span>{product.quantity}</span></p>
                     <div>
-                     <button className="quantity-btn">-</button>
-                     <button className="quantity-btn">+</button>
+                     <button className="quantity-btn" onClick={() => changeQuantity(product, '-')}>-</button>
+                     <button className="quantity-btn" onClick={() => changeQuantity(product, '+')}>+</button>
                     </div>
                 </div>
             </div>
