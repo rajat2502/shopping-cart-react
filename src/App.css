@@ -355,5 +355,39 @@ body {
 
   #sidebar {
     width: 100%;
+    height: 100%;
+    background: #151719;
+    right: -100%;
+    transition: all 300ms linear;
+  }
+
+  .toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  #sidebar.active .toggle-btn {
+    z-index: 1;
+  }
+
+  #sidebar.active .toggle-btn span {
+    background: white;
+    transition: transform 0.5s;
+  }
+
+  #sidebar.active .toggle-btn .span-1 {
+    transform: rotate(45deg);
+  }
+
+  #sidebar.active .toggle-btn .span-2 {
+    display: none !important;
+  }
+
+  #sidebar.active .toggle-btn .span-3 {
+    transform: rotate(135deg);
+    position: relative;
+    top: -10px;
   }
 }

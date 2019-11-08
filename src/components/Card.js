@@ -11,4 +11,4 @@ const Card = ({data, addToCart}) => {
     )
 }
 
-export default Card
+export default Card;

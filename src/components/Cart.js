@@ -15,9 +15,9 @@ const Cart = ({products}) => {
             <div id="sidebar" className={classActive ? "active" : ""}>
                 <div className="sidebar-content">
                     <div className="toggle-btn" onClick={toggleButton}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span className="span-1"></span>
+                        <span className="span-2"></span>
+                        <span className="span-3"></span>
                     </div>
                     
                     <div className="cart-content">

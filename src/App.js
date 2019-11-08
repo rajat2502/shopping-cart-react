@@ -48,8 +48,12 @@ const App = () => {
 
   const addToCart = (item) => {
     const productList = [...cart];
-    productList.push(item);
-    //bug if added then
+    if(productList.includes(item)) {
+
+    }
+    else {
+      productList.push(item);
+    }
     setCart(productList);
   }
   
