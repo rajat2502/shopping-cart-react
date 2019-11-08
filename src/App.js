@@ -10,6 +10,7 @@ const App = () => {
 
   const [products, setProducts] = useState([]);
   const [selectedSizes, setSelectedSizes] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     setProducts(filterList([], null));
@@ -44,11 +45,18 @@ const App = () => {
     }
     setProducts(array);
   }
+
+  const addToCart = (item) => {
+    const productList = [...cart];
+    productList.push(item);
+    //bug if added then
+    setCart(productList);
+  }
   
   return (
     <div className="App">
       <Sizes selectedSizes={selectedSizes} setSize={setSize} />
-      <Products products={products} sortProducts={sortProducts} />
+      <Products products={products} sortProducts={sortProducts} addToCart={addToCart} />
       <Cart />
     </div>
   );

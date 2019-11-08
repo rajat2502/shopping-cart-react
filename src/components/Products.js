@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import CardList from './CardList';
 
-const Products = ({products, sortProducts}) =>  {
+const Products = ({products, sortProducts, addToCart}) =>  {
 
     const [value, setValue] = useState('Select');
 
@@ -26,7 +26,7 @@ const Products = ({products, sortProducts}) =>  {
                 </div>
             </div>
 
-            <CardList products={products} />
+            <CardList products={products} addToCart={addToCart} />
             
         </div>
     )

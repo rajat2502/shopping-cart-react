@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 
 import Card from './Card';
 
-const CardList = ({products}) => {
+const CardList = ({products, addToCart}) => {
 
     const [delay, setDelay] = useState(true)
 
@@ -25,7 +25,7 @@ const CardList = ({products}) => {
                             products.length === 0 ? <p className="text-center">Sorry, No products of the specified categories :-(</p> :
                             products.map(item => {
                                 return (
-                                    <Card key={item.id} data={item} />
+                                    <Card key={item.id} data={item} addToCart={addToCart} />
                                 )
                             })
                         }
