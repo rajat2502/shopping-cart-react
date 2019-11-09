@@ -14,6 +14,9 @@ const App = () => {
 
   useEffect(() => {
     setProducts(filterList([], null));
+    if(JSON.parse(localStorage.getItem("cart"))) {
+      setCart(JSON.parse(localStorage.getItem("cart")));
+    }
   }, [])
 
   const setSize = (size) => {
@@ -54,6 +57,7 @@ const App = () => {
     const index = productList.indexOf(item);
     productList[index].quantity++;
     setCart(productList);
+    localStorage.setItem("cart", JSON.stringify(productList));
   }
 
   const changeQuantity = (item, e) => {
@@ -71,6 +75,7 @@ const App = () => {
       }
     } 
     setCart(productList);
+    localStorage.setItem("cart", JSON.stringify(productList));
   }
   
   return (

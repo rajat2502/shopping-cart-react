@@ -210,7 +210,7 @@ body {
 
 .cart-list {
   background: #1b1920;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 68vh;
 }
 
